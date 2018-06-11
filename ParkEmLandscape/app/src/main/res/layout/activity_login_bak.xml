@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <EditText
+        android:id="@+id/login_username_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="USERNAME"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/login_password_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="PASSWORD"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/login_username_editText"
+        android:layout_alignStart="@+id/login_username_editText" />
+
+    <Button
+        android:id="@+id/login_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="LOGIN"
+        android:background="@color/buttonBack"
+        android:layout_below="@+id/login_password_editText"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/user_login"
+        android:layout_alignBottom="@+id/login_username_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="54dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/login_username_editText"
+        android:layout_marginBottom="22dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/login_username_editText">
+
+
+        <ImageView
+            android:id="@+id/login_register_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="11dp"
+            app:srcCompat="@drawable/user_registration" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

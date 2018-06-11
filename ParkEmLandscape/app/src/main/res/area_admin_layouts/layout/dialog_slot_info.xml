@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:weightSum="3"
+    android:background="@drawable/back"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dialog_table"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/no_of_slots_display_via_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+               android:gravity="center"
+                android:text="Slots" />
+
+            <TextView
+                android:id="@+id/price_for_1hr_display_via_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Price for 1 Hr" />
+
+            <TextView
+                android:id="@+id/price_after_display_1hr_via_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Price after 1 Hr" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="3">
+
+            <EditText
+                android:id="@+id/no_of_slots_value_via_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/price_for_1hr_value_via_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/price_after_1hr_value_via_registration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+
+                android:inputType="phone" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/proceed_button_2_submit_slot_values"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:background="@color/buttonBack"
+        android:text="PROCEED" />
+</RelativeLayout>

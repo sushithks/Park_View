@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    tools:context=".area_admin.NavigationEntities.AreaAdminParkingPortalActivity"
+    android:padding="10dp">
+
+    <SurfaceView
+        android:id="@+id/qrReader"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="58dp"
+    />
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/customer_username_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="49dp"
+        android:textSize="20dp"
+        android:text=""
+        android:hint="USERNAME"
+/>
+
+    <Spinner
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vehicleTypeSpinner"/>
+
+    <Spinner
+        android:padding="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/inOutTypeSpinner"/>
+
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:background="@color/buttonBack"
+ />
+
+
+</LinearLayout>

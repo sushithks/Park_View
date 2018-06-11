@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/back"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/register_parking_name_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="99dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="PARKING NAME"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/register_username_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/register_parking_name_editText"
+        android:layout_below="@+id/register_parking_name_editText"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:id="@+id/register_password_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="PASSWORD"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/register_username_TextView"
+        android:layout_alignStart="@+id/register_username_TextView" />
+
+    <EditText
+        android:id="@+id/register_emailid_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="EMAIL ID"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/register_password_editText"
+        android:layout_alignStart="@+id/register_password_editText" />
+
+    <EditText
+        android:id="@+id/register_ph_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/register_emailid_editText"
+        android:layout_below="@+id/register_emailid_editText"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="MOBILE NUMBER"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/register_proceed_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_ph_editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:onClick="next"
+        android:background="@color/buttonBack"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="NEXT" />
+
+</RelativeLayout>

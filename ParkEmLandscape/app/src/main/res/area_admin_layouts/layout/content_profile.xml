@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back"
+    android:padding="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".area_admin.NavigationEntities.AreaAdminProfileActivity">
+
+
+            <LinearLayout
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/textViewProfileAdminPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:hint="Password"
+                    android:ems="10"
+                    android:gravity="center"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/textViewProfileAdminParkingName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:hint="Parking Name"
+                    android:ems="10"
+                    android:gravity="center"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/textViewProfileAdminEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:text=""
+                    android:ems="10"
+                    android:gravity="center"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/textViewProfileAdminPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone Number"
+                    android:text=""
+                    android:ems="10"
+                    android:gravity="center"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1.00"-->
+        <!--android:orientation="vertical"-->
+        <!--android:padding="5dp">-->
+
+        <!--&lt;!&ndash;<com.google.android.gms.maps.MapView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;</com.google.android.gms.maps.MapView>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<fragment &ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/admin_profile_map"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:name="com.google.android.gms.maps.SupportMapFragment"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="match_parent"/>&ndash;&gt;-->
+        <!---->
+
+
+    <!--</LinearLayout>-->
+    <fragment
+        android:id="@+id/admin_profile_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <TableRow
+                android:layout_weight="1"
+                android:weightSum="4">
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text=""/>
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="slots"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="price for 1 hr"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="price after 1 hr"
+                    android:gravity="center"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:weightSum="4">
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="2 wheeler"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/textViewProfileTwoWheelerSlots"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:ems="5"
+                    android:inputType="phone"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/textViewProfileTwoWheelerPriceForOneHour"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:inputType="phone"
+                    android:ems="5"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/textViewProfileTwoWheelerPriceAfterOneHour"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:inputType="phone"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:ems="5"
+                    android:gravity="center"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1"
+                android:weightSum="4">
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text="4 wheeler"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/textViewProfileFourWheelerSlots"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:text=""
+                    android:ems="5"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/textViewProfileFourWheelerPriceForOneHour"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:inputType="phone"
+                    android:text=""
+                    android:ems="5"
+                    android:gravity="center"/>
+                <EditText
+                    android:id="@+id/textViewProfileFourWheelerPriceAfterOneHour"
+                    android:layout_height="match_parent"
+                    android:inputType="phone"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:ems="5"
+                    android:gravity="center"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonUpadteAdminProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update" />
+
+</LinearLayout>

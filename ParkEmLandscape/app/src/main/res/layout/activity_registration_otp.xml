@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/registration_otp_submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="212dp"
+        android:text="SUBMIT"
+        android:onClick="submit"/>
+
+    <TextView
+        android:id="@+id/registratation_otp_resend_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Resend " />
+
+    <EditText
+        android:id="@+id/registration_otp_editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/registratation_otp_resend_textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:ems="10"
+        android:hint="OTP code"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

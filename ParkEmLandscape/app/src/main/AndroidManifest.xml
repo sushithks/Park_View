@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tf_staff.parkemlandscape">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CommonRegistrationActivity" />
+        <activity
+            android:name=".area_admin.NavigationEntities.AreaAdminRegistrationActivityLevelTwo"
+            android:label="Registration"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".area_admin.NavigationEntities.AreaAdminProfileActivity"
+            android:label="Profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".app_user.NavigationEntities.UserParkingHistoryActivity"
+            android:label="User Parking History"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".app_user.NavigationEntities.AlertActivity"
+            android:label="Alert"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity
+            android:name=".area_admin.NavigationEntities.AreaAdminParkingPortalActivity"
+            android:label="Parking Portal"
+            android:theme="@style/AppTheme" />
+
+        <!-- <activity android:name=".app_user.UserRegistrationActivity" /> -->
+        <service android:name=".fcm.FireBaseMessageHandler">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".fcm.MyInstanceIdService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".app_user.NavigationEntities.AppUserProfileActivity"
+            android:label="@string/title_activity_user_profile"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".app_user.NavigationEntities.AppUserNearByParkingActivity" />
+        <activity android:name=".app_user.NavigationEntities.AppUserWalletActivity" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".area_admin.NavigationEntities.AreaAdminParkingHistoryActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".app_user.NavigationEntities.UserListBookingsActivity"
+            android:label="@string/title_activity_user_list_bookings"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".area_admin.NavigationEntities.AreaAdminBookingListActivity"
+            android:label="@string/title_activity_area_admin_booking_list"
+            android:theme="@style/AppTheme"></activity>
+    </application>
+
+</manifest>

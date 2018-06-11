@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ParkView </string>
+    <string name="title_activity_profile">Profile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="booking_history">Booking History</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="title_activity_user_profile">User Profile</string>
+    <string-array name="bank_names">
+        <item>choose the bank   </item>
+        <item>SBI               </item>
+        <item>AXIS              </item>
+        <item>South Indian Bank </item>
+        <item>Union Bank        </item>
+    </string-array>
+
+    <string-array name="array_slot_type">
+        <item>2</item>
+        <item>4</item>
+        <!--<item>4 </item>-->
+    </string-array>
+
+    <string-array name="user_type">
+        <item>PARKING AREA ADMIN</item>
+        <item>PARK EM USER</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_app_user_near_by_parking_map">Map</string>
+    <string name="title_activity_user_parking_history">User Parking History</string>
+    <string name="title_activity_area_admin_parking_history">Area Admin Parking History
+    </string>
+    <string name="title_activity_user_list_bookings">User Bookings</string>
+    <string name="title_activity_area_admin_booking_list">AreaAdminBookingListActivity</string>
+</resources>

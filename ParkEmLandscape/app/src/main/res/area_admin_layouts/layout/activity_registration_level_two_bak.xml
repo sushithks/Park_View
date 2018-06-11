@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/back">
+
+    <!--<com.google.android.gms.maps.MapView-->
+    <!--android:id="@+id/registration_mapView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="350px"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_marginTop="88dp" />-->
+
+    <fragment
+        android:id="@+id/manual_search_autocomplete_fragment"
+        android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <fragment
+        android:id="@+id/admin_edit_profile_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+/>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+    <TextView
+    android:id="@+id/registration_slot_type_textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:text="Slot Type"
+        android:layout_marginBottom="88dp"
+        android:layout_marginEnd="29dp"
+/>
+
+    <Button
+    android:id="@+id/registration_bike_slot_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+        android:onClick="bike"
+        android:background="@color/buttonBack"
+    android:text="2 Wheeler"
+        android:layout_marginEnd="17dp"
+/>
+
+    <Button
+    android:id="@+id/registration_car_slot_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="27dp"
+        android:background="@color/buttonBack"
+        android:onClick="car"
+    android:text="4 Wheeler" />
+</LinearLayout>
+    <Button
+    android:id="@+id/registration_submit_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="53dp"
+    android:text="SUBMIT"
+        android:background="@color/buttonBack"
+    android:onClick="submit"/>
+
+</LinearLayout>

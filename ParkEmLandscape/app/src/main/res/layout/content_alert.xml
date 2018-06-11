@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="400dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:showIn="@layout/activity_alert">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Message"
+    android:padding="10dp"
+    android:textColor="#FFFFFF"
+    android:id="@+id/alertTextView"
+    android:textSize="18dp"/>
+    <EditText
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Feedback"
+        android:id="@+id/feedbackEditText"/>
+    <Button
+        android:padding="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonBack"
+        android:id="@+id/submitFeedbackButton"
+        android:text="Submit"
+        android:textColor="#ffffff"
+/>
+</LinearLayout>

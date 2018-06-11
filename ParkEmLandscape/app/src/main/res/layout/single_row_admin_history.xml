@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="5dp"
+    card_view:cardBackgroundColor="@android:color/transparent"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <TextView
+            android:id="@+id/checkInTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="CheckIn:" />
+
+        <TextView
+            android:id="@+id/checkOutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="CheckOut:" />
+
+        <TextView
+            android:id="@+id/cashTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/checkInTextView"
+            android:layout_marginTop="11dp"
+            android:text="Cash:" />
+
+        <TextView
+            android:id="@+id/paymentModeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/cashTextView"
+            android:layout_centerHorizontal="true"
+            android:text="Payment Mode:" />
+
+        <TextView
+            android:id="@+id/vehicleTypeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/paymentModeTextView"
+            android:text="Vehicle:" />
+
+        <TextView
+            android:id="@+id/feedbackTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/cashTextView"
+            android:layout_marginTop="11dp"
+            android:text="Feedback:" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

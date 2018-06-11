@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "313161816709",
+    "firebase_url": "https://parkemlandscape-d2b3f.firebaseio.com",
+    "project_id": "parkemlandscape-d2b3f",
+    "storage_bucket": "parkemlandscape-d2b3f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:313161816709:android:355b0732f468b8c9",
+        "android_client_info": {
+          "package_name": "com.tf_staff.parkemlandscape"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "313161816709-g7q0khrfn61jhbqq6gg4cbq6lloc2bjd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tf_staff.parkemlandscape",
+            "certificate_hash": "ce79c649b7eaacfc869c9253c4c929b8f68b498e"
+          }
+        },
+        {
+          "client_id": "313161816709-ncjih4bjt5rs2715mcohu83p0g1f7miv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbtL1iudyApjgp1SjJEShw0g9NjfD1Yvg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "313161816709-ncjih4bjt5rs2715mcohu83p0g1f7miv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

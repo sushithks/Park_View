@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_4user_2park"
+            android:icon="@drawable/parking_portal"
+            android:title="ParkEm" />
+        <item
+            android:id="@+id/nav_user_wallet"
+            android:icon="@drawable/wallet"
+            android:title="Recharge Wallet" />
+        <item
+            android:id="@+id/nav_qr_code"
+            android:icon="@drawable/wallet"
+            android:title="Qr Code" />
+        <item
+            android:id="@+id/nav_user_edit_profile"
+            android:icon="@drawable/settings"
+            android:title="Edit Profile" />
+
+        <item
+            android:id="@+id/nav_user_history"
+            android:icon="@drawable/history"
+            android:title="History" />
+        <!--<item-->
+            <!--android:id="@+id/nav_user_feedback"-->
+            <!--android:icon="@drawable/feedback"-->
+            <!--android:title="Feedback" />-->
+        <item
+            android:id="@+id/nav_user_booking"
+            android:icon="@drawable/booking"
+            android:title="My Bookings" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/settings"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>
